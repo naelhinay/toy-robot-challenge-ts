@@ -12,6 +12,7 @@ Toy Robot Challenge
 - `yarn add --dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 - `yarn create @eslint/config`
 - `yarn add --dev jest @types/jest ts-jest`
+- `yarn add --dev supertest @types/supertest` 
 ## Commands
 - `yarn build`- build the project
 - `yarn start` - build and start the project

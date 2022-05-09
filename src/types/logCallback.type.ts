@@ -1,0 +1,1 @@
+export type LogCallback = (err: Error | null, res?: string) => void;
