@@ -1,5 +1,4 @@
 import { Robot } from './classes';
-import { Direction } from './enums';
 import testData from './testData/sample.json';
 
 const cb = (err: Error | null, res?: string) : void => {

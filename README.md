@@ -1,19 +1,20 @@
 # toy-robot-challenge-ts
 Toy Robot Challenge
 
+You can initialize the robot by importing `Robot` class then initializing it by passing the max width and length of the table.
+- e.g. if you want a 5x5 table, pass `new Robot(4, 4)` as start of coordinate is 0.
+
+This game reads data from `src/testData/sample.json`. Modify the file to test commands.
+## Allowed Commands
+- `PLACE X,Y,F` where `X` is the x coordinate, `Y` is the y coordinate and `F` the direction
+- `MOVE` - will move robot in the direction it's facing. Robot will ignore command if instruction will result in robot falling off the table
+- `LEFT` - will rotate robot 90 degrees counter-clockwise.
+- `RIGHT` - will rotate robot 90 degrees clockwise.
+- `REPORT` - will display current location and direction of the robot
+
 ## Prerequisite
 - NodeJS >= 14
 - Before running the project, make sure to install dependencies by running `yarn`
-## Scaffold commands
-- `yarn init`
-- `yarn add --dev typescript @types/node`
-- `npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true`
-- `yarn add --dev ts-node nodemon`
-- `yarn add --dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
-- `yarn create @eslint/config`
-- `yarn add --dev jest @types/jest ts-jest`
-- `yarn add --dev supertest @types/supertest` 
 ## Commands
 - `yarn build`- build the project
 - `yarn start` - build and start the project
-- `yarn start:dev` - start the project in development mode

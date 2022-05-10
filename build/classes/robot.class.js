@@ -10,6 +10,9 @@ class Robot {
     isRobotPlaced() {
         return !!(this._robot);
     }
+    get details() {
+        return this._robot;
+    }
     place(robot, cb) {
         if (!(robot.direction in enums_1.Direction)) {
             return cb(new Error('PLACE command error, invalid direction'));

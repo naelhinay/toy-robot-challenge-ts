@@ -12,9 +12,13 @@ export class Robot {
     this._maxY = y;
   }
 
-  private isRobotPlaced() : boolean {
+  public isRobotPlaced() : boolean {
     return !!(this._robot);
   }
+
+  public get details() {
+    return this._robot;
+}
 
   public place (robot: IRobot, cb: LogCallback) : void {
     if (!(robot.direction in Direction)) {
